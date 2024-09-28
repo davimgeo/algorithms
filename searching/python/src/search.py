@@ -16,11 +16,6 @@ class Search:
         l = 0
         r = len(self.arr) - 1
 
-        if self.arr[l] == self.num:
-            return l
-        elif self.arr[r] == self.num:
-            return r 
-
         while l <= r:
             k = (l + r) // 2
             # [l, k]
@@ -33,6 +28,5 @@ class Search:
                 return k
         
         return False
-
 
 

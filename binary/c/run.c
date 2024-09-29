@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "src/include/bin_1d.h"
 #include "src/include/bin_2d.h"
 
 #define ROW 648
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
         exit(-1);
     }
 
-    read_2D(FILE_PATH, arr_2dr, sizeof(float), ROW, COLUMN);
+    read2D(FILE_PATH, arr_2dr, sizeof(float), ROW, COLUMN);
 
     // Converting 2D array into a txt
 
